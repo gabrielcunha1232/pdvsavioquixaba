@@ -2,7 +2,7 @@ package domain
 
 import "uuid"
 
-type Table struct {
+type Tables struct {
 	ID uuid.UUID `db:"id"`
 	TenantID uuid.UUID `db:"tenant_id"`
 	Label string `db:"label"`
