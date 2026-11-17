@@ -9,4 +9,5 @@ type Tenants struct {
 	Name string `db:"name"`
 	Slug string `db:"slug"`
 	CreatedAt time.Time `db:"created_at"`
+	Active bool `db:"active"`
 }

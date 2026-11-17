@@ -15,7 +15,7 @@ func ConnectionDB(connect string) (*sqlx.DB, error) {
 
 	db.SetMaxOpenConns(25)
 	db.SetMaxIdleConns(25)
-	db.SetConnMaxLifeTime(5 *time.Minute)
+	db.SetConnMaxLifetime(5 * time.Minute)
 
 	return db, err
 }
